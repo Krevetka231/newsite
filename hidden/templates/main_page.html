@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body id="clockwerk">
+  <div id="create_build">
+    <form method="POST">
+      <button type="submit">создать имбу</button>
+    </form>
+
+    <div id="item_table">
+      <div id="item_table_row1">
+        <img src="{{ items[item1] }}" alt="item image" id="item1" class='item'>
+        <img src="{{ items[item2] }}" alt="item image" id="item1" class="item">
+        <img src="{{ items[item3] }}" alt="item image" id="item1" class='item'> 
+      </div>
+      <div id="item_table_row2">
+        <img src="{{ items[item4] }}" alt="item image" id="item1" class="item">
+        <img src="{{ items[item5] }}" alt="item image" id="item1" class="item">
+        <img src="{{ items[item6] }}" alt="item image" id="item1" class="item">
+      </div>
+
+      <div id="position"> 
+        <p class="pos">POS</p>  
+        <p id="posVar" class='pos'>{{ position }}</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
