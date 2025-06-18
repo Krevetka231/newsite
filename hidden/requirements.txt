@@ -10,7 +10,6 @@ markdown-it-py==3.0.0
 MarkupSafe==3.0.2
 mdurl==0.1.2
 Pygments==2.19.1
-pywin32==310
 rich==14.0.0
 sockets==1.0.0
 SQLAlchemy==2.0.41
